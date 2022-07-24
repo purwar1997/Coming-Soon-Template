@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+/* variables are declared here with their corresponding values */
+/* root implies that these variables can be used in any HTML and CSS file */
+/* root convert these variables into global variables */
+
+:root {
+  /* variable name: value */
+  /* variable name has to start with -  */
+  --yellow: #ffbb30;
+  --black: #242424;
+  --gray: #818181;
+  --white: #ffffff;
+  --font: "Oswald";
+}
+
+/* universal selector: overrides the default CSS properties of browser  */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: var(--font);
+}
+
+img {
+  height: 130px;
+  width: 130px;
+  display: block;
+  margin: 30px auto; /* 30px -> top and bottom, auto -> left and right */
+}
+
+.banner {
+  background-color: var(--white);
+  padding-bottom: 20px;
+  /* a -> alpha channel (0.0 to 1.0) which specifies the opacity of color */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+p {
+  text-align: center;
+  color: var(--gray);
+  font-size: 25px;
+  margin-left: 4em;
+}
